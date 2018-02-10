@@ -32,7 +32,7 @@
     "type": "git",
     "url": "git+https://github.com/kristerkari/stylelint-react-native.git"
   },
-  "author": "",
+  "author": "Krister Kari",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kristerkari/stylelint-react-native/issues"
