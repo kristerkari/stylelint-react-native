@@ -38,7 +38,7 @@ Please refer to [stylelint docs](http://stylelint.io/user-guide/) for the detail
 
 These rules are meant to be used with tools that allow you to write CSS when using React Native, e.g. [styled-components](https://www.styled-components.com/), [React Native CSS modules](https://github.com/kristerkari/react-native-css-modules), etc.
 
-* [`css-property-no-unknown`](./src/rules/css-property-no-unknown/README.md): Disallow unknown CSS properties.
+* [`css-property-no-unknown`](./src/rules/css-property-no-unknown/README.md): Disallow unknown React Native CSS properties.
 
 ### `style-` rules (for React Native's built-in styling)
 
