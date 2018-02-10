@@ -5,6 +5,7 @@ git:
 cache:
   directories:
     - $HOME/.npm
+    - node_modules
 
 matrix:
   include:
