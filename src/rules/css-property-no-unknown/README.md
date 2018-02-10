@@ -10,7 +10,7 @@ Disallow unknown React Native CSS properties.
  * These properties */
 ```
 
-This rule considers properties defined in [css-to-react-native](https://github.com/styled-components/css-to-react-native) to be known.
+This rule considers properties supported by [css-to-react-native](https://github.com/styled-components/css-to-react-native) to be known.
 
 This rule ignores variables (`$sass`, `@less`, `--custom-property`).
 
