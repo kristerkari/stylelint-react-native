@@ -40,6 +40,8 @@ These rules are meant to be used with tools that allow you to write CSS when usi
 
 * [`css-property-no-unknown`](./src/rules/css-property-no-unknown/README.md): Disallow unknown React Native CSS properties.
 
+---
+
 ### `style-` rules (for React Native's built-in styling)
 
 These rules are meant to be used when styling with React Native's built-in styling, or with tools that use React Native's default styling.
