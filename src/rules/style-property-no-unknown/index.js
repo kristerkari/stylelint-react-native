@@ -4,6 +4,7 @@ import {
   kebabCase,
   namespace,
   isString,
+  isCustomProperty,
   isStandardSyntaxProperty,
   isStandardSyntaxDeclaration,
   optionsMatches
@@ -46,6 +47,10 @@ export default function(actual, options) {
       }
 
       if (!isStandardSyntaxDeclaration(decl)) {
+        return;
+      }
+
+      if (isCustomProperty(prop)) {
         return;
       }
 

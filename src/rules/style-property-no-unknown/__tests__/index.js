@@ -25,6 +25,10 @@ testRule(rule, {
       description: "accepts React Native specific properties"
     },
     {
+      code: ".foo { --bg-color: white; }",
+      description: "ignore standard CSS variables"
+    },
+    {
       code: ".foo { *width: 100px; }",
       description: "ignore CSS hacks"
     }
