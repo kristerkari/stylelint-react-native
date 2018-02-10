@@ -7,11 +7,7 @@ A collection of React Native specific linting rules for [stylelint](https://gith
 
 ## Installation and usage
 
-stylelint-react-native is a plugin for [stylelint](http://stylelint.io/user-guide/), so it's meant to be used with it.
-
-**Node.js v4.2.1 or newer** is required. That's because stylelint itself [doesn't support Node.js versions below 4](https://github.com/stylelint/stylelint/blob/master/package.json#L32).
-
-First, install stylelint-react-native (and stylelint, if you haven't done so yet) via NPM:
+Install stylelint-react-native (and stylelint, if you haven't done so yet):
 
 ```
 yarn add stylelint stylelint-react-native --dev
