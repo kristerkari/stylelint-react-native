@@ -7,7 +7,7 @@ A collection of React Native specific linting rules for [stylelint](https://gith
 
 ## Installation and usage
 
-Install stylelint-react-native (and stylelint, if you haven't done so yet):
+Install `stylelint-react-native` (and `stylelint`, if you haven't done so yet):
 
 ```
 yarn add stylelint stylelint-react-native --dev
