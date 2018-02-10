@@ -38,4 +38,31 @@ Please refer to [stylelint docs](http://stylelint.io/user-guide/) for the detail
 
 ## List of rules
 
-### CSS- rules
+### `css-` rules (for tools like styled-components)
+
+These rules are meant to be used with tools that allow you to write CSS when using React Native, e.g. [styled-components](https://www.styled-components.com/), [React Native CSS modules](https://github.com/kristerkari/react-native-css-modules), etc.
+
+* [`css-property-no-unknown`](./src/rules/css-property-no-unknown/README.md): Disallow unknown CSS properties.
+
+### `style-` rules (for React Native's built-in styling)
+
+These rules are meant to be used when styling with React Native's built-in styling, or with tools that use React Native's default styling.
+
+* [`style-property-no-unknown`](./src/rules/css-property-no-unknown/README.md): Disallow unknown React Native Style properties.
+
+## Help out
+
+There work on the plugin's rules is still in progress, so if you feel like it, you're welcome to help out in any of these (the plugin follows stylelint guidelines so most part of this is based on its docs):
+
+* Create, enhance, and debug rules (see stylelint's guide to "[Working on rules](https://github.com/stylelint/stylelint/blob/master/docs/developer-guide/rules.md)").
+* Improve documentation.
+* Chime in on any open issue or pull request.
+* Open new issues about your ideas on new rules, or for how to improve the existing ones, and pull requests to show us how your idea works.
+* Add new tests to absolutely anything.
+* Work on improving performance of rules.
+* Contribute to [stylelint](https://github.com/stylelint/stylelint)
+* Spread the word.
+
+We communicate via [issues](https://github.com/kristerkari/stylelint-react-native/issues) and [pull requests](https://github.com/kristerkari/stylelint-react-native/pulls).
+
+There is also [stackoverflow](http://stackoverflow.com/questions/tagged/stylelint), which would be the preferred QA forum.
