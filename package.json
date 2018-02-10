@@ -6,6 +6,7 @@
   "babel": {
     "presets": ["es2015"]
   },
+  "files": ["dist", "src", "README.md", "!**/__tests__"],
   "keywords": [
     "css",
     "csslint",
