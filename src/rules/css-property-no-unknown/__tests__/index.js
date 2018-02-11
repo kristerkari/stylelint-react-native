@@ -75,11 +75,11 @@ testRule(rule, {
     {
       code: `
       .foo {
-        display: block;
+        word-wrap: break-word;
       }
     `,
       description: "rejects unsupported CSS properties",
-      message: messages.rejected("display"),
+      message: messages.rejected("word-wrap"),
       line: 3,
       column: 9
     }
