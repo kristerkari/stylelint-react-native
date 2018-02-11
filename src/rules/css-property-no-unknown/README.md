@@ -24,7 +24,7 @@ The following patterns are considered violations:
 
 ```css
 .foo {
-  display: block;
+  word-wrap: break-word;
 }
 ```
 
