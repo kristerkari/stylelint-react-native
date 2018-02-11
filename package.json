@@ -1,12 +1,12 @@
 {
   "name": "stylelint-react-native",
   "description": "A collection of React Native specific rules for stylelint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "babel": {
     "presets": ["es2015"]
   },
-  "files": ["dist", "src", "README.md", "!**/__tests__"],
+  "files": ["dist", "src", "CHANGELOG.md", "README.md", "!**/__tests__"],
   "keywords": [
     "css",
     "csslint",
