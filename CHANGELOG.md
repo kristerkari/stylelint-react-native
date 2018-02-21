@@ -1,6 +1,7 @@
 ## HEAD
 
 * Added: support for stylelint 9.
+* Updated: `react-native-known-styling-properties` dependency to v1.0.3.
 
 ## v1.0.1
 

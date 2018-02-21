@@ -3608,9 +3608,9 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-native-known-styling-properties@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-known-styling-properties/-/react-native-known-styling-properties-1.0.2.tgz#b932875a3a5c61ab5183b0090a17148fb330e858"
+react-native-known-styling-properties@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-known-styling-properties/-/react-native-known-styling-properties-1.0.3.tgz#321eebd8bc4748a33e43aea4ad82fbfa033fd5ed"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
