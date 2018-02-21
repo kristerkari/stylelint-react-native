@@ -5,6 +5,7 @@ A collection of React Native specific linting rules for [stylelint](https://gith
 [![NPM version](https://img.shields.io/npm/v/stylelint-react-native.svg)](https://www.npmjs.com/package/stylelint-react-native)
 [![Build Status](https://travis-ci.org/kristerkari/stylelint-react-native.svg?branch=master)](https://travis-ci.org/kristerkari/stylelint-react-native)
 [![Build status](https://ci.appveyor.com/api/projects/status/6rse3dd910c0wiwl/branch/master?svg=true)](https://ci.appveyor.com/project/kristerkari/stylelint-react-native/branch/master)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
 
 ## Installation and usage
 
