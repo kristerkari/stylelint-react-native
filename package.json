@@ -61,7 +61,7 @@
     "testRegex": ".*\\.test\\.js$|src/.*/__tests__/.*\\.js$"
   },
   "peerDependencies": {
-    "stylelint": "^8.0.0"
+    "stylelint": "^8.0.0 || ^9.0.0"
   },
   "lint-staged": {
     "**/*.{js,json,md}": ["prettier --write", "git add"]
