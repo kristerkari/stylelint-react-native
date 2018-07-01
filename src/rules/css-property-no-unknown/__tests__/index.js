@@ -82,6 +82,17 @@ testRule(rule, {
       message: messages.rejected("word-wrap"),
       line: 3,
       column: 9
+    },
+    {
+      code: `
+      .foo {
+        -webkit-align-self: stretch;
+      }
+    `,
+      description: "rejects CSS properties with vendor prefix",
+      message: messages.rejected("-webkit-align-self"),
+      line: 3,
+      column: 9
     }
   ]
 });

@@ -77,6 +77,17 @@ testRule(rule, {
     {
       code: `
       .foo {
+        -webkit-align-self: stretch;
+      }
+    `,
+      description: "rejects CSS properties with vendor prefix",
+      message: messages.rejected("-webkit-align-self"),
+      line: 3,
+      column: 9
+    },
+    {
+      code: `
+      .foo {
         border: 1px #000 solid;
         box-shadow: 1px 2px 3px red;
       }

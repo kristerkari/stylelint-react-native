@@ -14,8 +14,6 @@ This rule considers properties supported by [css-to-react-native](https://github
 
 This rule ignores variables (`$sass`, `@less`, `--custom-property`).
 
-This rule ignores vendor-prefixed properties (e.g., `-moz-align-self`, `-webkit-align-self`).
-
 ## Options
 
 ### `true`
