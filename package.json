@@ -38,7 +38,7 @@
     "url": "https://github.com/kristerkari/stylelint-react-native/issues"
   },
   "engines": {
-    "node": ">=4.2.1"
+    "node": ">=6"
   },
   "homepage": "https://github.com/kristerkari/stylelint-react-native#readme",
   "jest": {
