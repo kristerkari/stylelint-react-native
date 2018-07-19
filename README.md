@@ -38,6 +38,10 @@ Please refer to [stylelint docs](http://stylelint.io/user-guide/) for the detail
 
 ## List of rules
 
+### General rules
+
+* [`font-weight-no-ignored-values`](./src/rules/font-weight-no-ignored-values/README.md): Disallow valid `font-weight` values that work on iOS, but are ignored and get mapped to `normal` or `bold` weight on Android.
+
 ### `css-` rules (for tools like styled-components)
 
 These rules are meant to be used with tools that allow you to write CSS when using React Native, e.g. [styled-components](https://www.styled-components.com/), [React Native CSS modules](https://github.com/kristerkari/react-native-css-modules), etc.
