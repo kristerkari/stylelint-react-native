@@ -1,5 +1,7 @@
 # stylelint-react-native
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kristerkari/stylelint-react-native.svg)](https://greenkeeper.io/)
+
 A collection of React Native specific linting rules for [stylelint](https://github.com/stylelint/stylelint) (in a form of a plugin).
 
 [![NPM version](https://img.shields.io/npm/v/stylelint-react-native.svg)](https://www.npmjs.com/package/stylelint-react-native)
