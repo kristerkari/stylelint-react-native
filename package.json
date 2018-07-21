@@ -4,9 +4,17 @@
   "version": "1.1.1",
   "main": "dist/index.js",
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
-  "files": ["dist", "src", "CHANGELOG.md", "README.md", "!**/__tests__"],
+  "files": [
+    "dist",
+    "src",
+    "CHANGELOG.md",
+    "README.md",
+    "!**/__tests__"
+  ],
   "keywords": [
     "css",
     "csslint",
@@ -44,9 +52,14 @@
   "jest": {
     "clearMocks": true,
     "collectCoverage": false,
-    "collectCoverageFrom": ["src/**/*.js"],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
     "coverageDirectory": "./.coverage/",
-    "coverageReporters": ["lcov", "text"],
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 75,
@@ -55,16 +68,23 @@
         "statements": 75
       }
     },
-    "setupFiles": ["./jest-setup.js"],
+    "setupFiles": [
+      "./jest-setup.js"
+    ],
     "testEnvironment": "node",
-    "roots": ["src"],
+    "roots": [
+      "src"
+    ],
     "testRegex": ".*\\.test\\.js$|src/.*/__tests__/.*\\.js$"
   },
   "peerDependencies": {
     "stylelint": "^8.0.0 || ^9.0.0"
   },
   "lint-staged": {
-    "**/*.{js,json,md}": ["prettier --write", "git add"]
+    "**/*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -77,15 +97,23 @@
       "jest": true,
       "node": true
     },
-    "plugins": ["sort-requires"],
+    "plugins": [
+      "sort-requires"
+    ],
     "globals": {
       "testRule": true
     },
     "rules": {
       "eqeqeq": "error",
-      "no-use-before-define": ["error", "nofunc"],
+      "no-use-before-define": [
+        "error",
+        "nofunc"
+      ],
       "sort-requires/sort-requires": "error",
-      "strict": ["error", "global"],
+      "strict": [
+        "error",
+        "global"
+      ],
       "arrow-spacing": "error",
       "no-var": "error",
       "object-shorthand": "error",
