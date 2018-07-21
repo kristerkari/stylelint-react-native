@@ -1,7 +1,7 @@
 {
   "name": "stylelint-react-native",
   "description": "A collection of React Native specific rules for stylelint",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "babel": {
     "presets": [
