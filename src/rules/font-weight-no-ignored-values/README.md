@@ -10,6 +10,12 @@ Disallow valid `font-weight` values that work on iOS, but are ignored and get ma
  *             This value */
 ```
 
+More info:
+
+- [react-native/issues/19707](https://github.com/facebook/react-native/issues/19707)
+- [ReactFontManager.java](https://github.com/facebook/react-native/blob/master/ReactAndroid/src/main/java/com/facebook/react/views/text/ReactFontManager.java)
+- [react-native/issues/19736](https://github.com/facebook/react-native/issues/19736)
+
 ## Options
 
 ### `true`
