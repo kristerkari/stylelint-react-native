@@ -1,12 +1,13 @@
-import { utils } from "stylelint";
 import { allCSS2RNProps } from "react-native-known-styling-properties";
+import { utils } from "stylelint";
 import {
+  isCustomProperty,
+  isExportBlock,
+  isStandardSyntaxDeclaration,
+  isStandardSyntaxProperty,
+  isString,
   kebabCase,
   namespace,
-  isString,
-  isCustomProperty,
-  isStandardSyntaxProperty,
-  isStandardSyntaxDeclaration,
   optionsMatches
 } from "../../utils";
 
@@ -51,6 +52,10 @@ export default function(actual, options) {
       }
 
       if (isCustomProperty(prop)) {
+        return;
+      }
+
+      if (isExportBlock(decl.parent)) {
         return;
       }
 
