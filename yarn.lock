@@ -1659,11 +1659,12 @@ escodegen@^1.9.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-stylelint@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-stylelint/-/eslint-config-stylelint-10.0.0.tgz#33cff198f4c3ad1e9e75c0285945dd61800c59c5"
-  integrity sha512-hbE+gecvP+O3g+HaA7yoj7VPwKCbU2ySojSBytbkaY3+WvYsvk2VDPXBZ5K4x8agpDj0/6i7oJZ8oHaK055jUA==
+eslint-config-stylelint@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-stylelint/-/eslint-config-stylelint-11.0.0.tgz#3c761d9d08c97902bdbed87a830342636518c93a"
+  integrity sha512-h5Esi3k4i/gB1Pta/Glhm0r2wak/RrHMT1B+sNkfIkOK3/lEKqgKL8yT1q3YH/VnXEWgp/jnaR/ddMqnngr1Sw==
   dependencies:
+    eslint-plugin-eslint-comments "^3.0.1"
     eslint-plugin-jest "^22.0.0"
     eslint-plugin-node "^8.0.0"
     eslint-plugin-sort-requires "^2.1.0"
@@ -1675,6 +1676,14 @@ eslint-plugin-es@^1.3.1:
   dependencies:
     eslint-utils "^1.3.0"
     regexpp "^2.0.1"
+
+eslint-plugin-eslint-comments@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-3.0.1.tgz#baafb713584c0de7ee588710720e580bcc28cfbb"
+  integrity sha512-7zU6gCulKVmfG3AZdnvDxzfHaGdvkA8tsLiKbneeI/TlVaulJsRzOyMCctH9QTobKVJ6LIsiJbrkSKkgcFLHxw==
+  dependencies:
+    escape-string-regexp "^1.0.5"
+    ignore "^3.3.8"
 
 eslint-plugin-jest@^22.0.0:
   version "22.0.0"
@@ -2556,6 +2565,11 @@ iconv-lite@^0.4.24:
 ignore@^3.3.5:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.7.tgz#612289bfb3c220e186a58118618d5be8c1bab021"
+
+ignore@^3.3.8:
+  version "3.3.10"
+  resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.10.tgz#0a97fb876986e8081c631160f8f9f389157f0043"
+  integrity sha512-Pgs951kaMm5GXP7MOvxERINe3gsaVjUWFm+UZPSq9xYriQAksyhg0csnS0KXSNRD5NmNdapXEpjxG49+AKh/ug==
 
 ignore@^4.0.6:
   version "4.0.6"
