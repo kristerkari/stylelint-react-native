@@ -129,7 +129,7 @@
     "babel-preset-jest": "23.2.0",
     "coveralls": "^3.0.2",
     "eslint": "^5.9.0",
-    "eslint-config-stylelint": "^10.0.0",
+    "eslint-config-stylelint": "^11.0.0",
     "eslint-plugin-sort-requires": "^2.1.0",
     "husky": "^1.1.4",
     "jest": "23.4.1",
