@@ -1,3 +1,7 @@
+## HEAD
+
+- Fixed: `css-property-no-unknown` don't warn for properties inside an `:export` block.
+
 ## v2.0.0
 
 - Removed: Node.JS 4.x support. Node.js 6.x or greater is now required.

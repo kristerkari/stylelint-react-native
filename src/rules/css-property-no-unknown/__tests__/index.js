@@ -1,4 +1,4 @@
-import rule, { ruleName, messages } from "..";
+import rule, { messages, ruleName } from "..";
 
 testRule(rule, {
   ruleName,
@@ -40,6 +40,14 @@ testRule(rule, {
     {
       code: ".foo { *width: 100px; }",
       description: "ignore CSS hacks"
+    },
+    {
+      code: `
+      :export {
+        foo: 1
+      }
+      `,
+      description: "ignore properties inside ICSS :export pseudo-selector"
     }
   ],
 
@@ -92,6 +100,22 @@ testRule(rule, {
       description: "rejects CSS properties with vendor prefix",
       message: messages.rejected("-webkit-align-self"),
       line: 3,
+      column: 9
+    },
+    {
+      code: `
+      :export {
+        foo: 1;
+      }
+
+      .foo {
+        -webkit-align-self: stretch;
+      }
+    `,
+      description:
+        "ignores :export and rejects CSS properties with vendor prefix",
+      message: messages.rejected("-webkit-align-self"),
+      line: 7,
       column: 9
     }
   ]
