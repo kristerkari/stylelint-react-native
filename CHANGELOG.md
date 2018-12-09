@@ -1,4 +1,4 @@
-## HEAD
+## v2.0.1
 
 - Fixed: `css-property-no-unknown` don't warn for properties inside an `:export` block.
 
