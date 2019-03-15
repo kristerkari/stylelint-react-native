@@ -15,6 +15,7 @@ More info:
 - [react-native/issues/19707](https://github.com/facebook/react-native/issues/19707)
 - [ReactFontManager.java](https://github.com/facebook/react-native/blob/master/ReactAndroid/src/main/java/com/facebook/react/views/text/ReactFontManager.java)
 - [react-native/issues/19736](https://github.com/facebook/react-native/issues/19736)
+- [React Native feature requests - fontWeight '300' not working on Android](https://react-native.canny.io/feature-requests/p/fontweight-300-not-working-on-android)
 
 ## Options
 
