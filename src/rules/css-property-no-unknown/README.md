@@ -4,10 +4,10 @@ Disallow unknown React Native CSS properties.
 
 This rule is meant to be used with tools that allow you to write CSS when using React Native, e.g. [styled-components](https://www.styled-components.com/), [React Native CSS modules](https://github.com/kristerkari/react-native-css-modules), etc.
 
-```css
-.text {
+```js
+const Header = styled.div`
   heigth: 100%;
-}
+`;
 /** ↑
  * These properties */
 ```
