@@ -235,6 +235,20 @@ testRule(rule, {
       column: 9,
       description:
         "rejects styled-components mix of supported CSS properties and unsupported property"
+    },
+    {
+      code: `
+      import styled from "styled-components";
+
+      const Test = styled.Text\`
+        justifyContent: flex-start;
+      \`;
+      `,
+      message: messages.rejected("justifyContent"),
+      line: 5,
+      column: 9,
+      description:
+        "rejects styled-components CSS properties that use camel case (issue #17)"
     }
   ]
 });
