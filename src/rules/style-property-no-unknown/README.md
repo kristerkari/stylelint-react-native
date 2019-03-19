@@ -1,6 +1,6 @@
-# css-property-no-unknown
+# style-property-no-unknown
 
-Disallow unknown React Native CSS properties.
+Disallow unknown React Native styling properties.
 
 ```css
 .foo {
