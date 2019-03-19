@@ -1,4 +1,4 @@
-import rule, { ruleName, messages } from "..";
+import rule, { messages, ruleName } from "..";
 
 testRule(rule, {
   ruleName,
@@ -91,6 +91,92 @@ testRule(rule, {
         border: 1px #000 solid;
         box-shadow: 1px 2px 3px red;
       }
+      `,
+      description: "rejects css-to-react-native specific properties"
+    }
+  ]
+});
+
+testRule(rule, {
+  ruleName,
+  syntax: "css-in-js",
+  skipBasicChecks: true,
+  config: [true],
+
+  accept: [
+    {
+      code: `
+      StyleSheet.create({
+        foo: {
+          borderColor: "red",
+          height: 0,
+          minWidth: 700
+        }
+      });
+      `,
+      description: "accepts supported CSS properties"
+    },
+    {
+      code: `
+      StyleSheet.create({
+        foo: {
+          elevation: 6,
+          shadowColor: "black"
+        }
+      });
+      `,
+      description: "accepts React Native specific properties"
+    }
+  ],
+
+  reject: [
+    {
+      code: `
+      StyleSheet.create({
+        foo: {
+          colr: "blue"
+        }
+      })
+      `,
+      description: "rejects property with typo",
+      message: messages.rejected("colr"),
+      line: 4,
+      column: 10
+    },
+    {
+      code: `
+      StyleSheet.create({
+        foo: {
+          COLR: "blue"
+        }
+      })
+      `,
+      description: "rejects uppercase property with typo",
+      message: messages.rejected("COLR"),
+      line: 4,
+      column: 10
+    },
+    {
+      code: `
+      StyleSheet.create({
+        foo: {
+          wordWrap: "break-word"
+        }
+      })
+    `,
+      description: "rejects unsupported CSS properties",
+      message: messages.rejected("word-wrap"),
+      line: 4,
+      column: 10
+    },
+    {
+      code: `
+      StyleSheet.create({
+        foo: {
+          border: "1px #000 solid",
+          boxShadow: "1px 2px 3px red"
+        }
+      })
       `,
       description: "rejects css-to-react-native specific properties"
     }
