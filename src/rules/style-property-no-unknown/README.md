@@ -2,10 +2,14 @@
 
 Disallow unknown React Native styling properties.
 
-```css
-.foo {
-  heigth: 100%;
-}
+This rule is meant to be used when styling with React Native's built-in styling ([StyleSheet](https://facebook.github.io/react-native/docs/stylesheet)), or with tools that use React Native's default styling.
+
+```js
+StyleSheet.create({
+  text: {
+    heigth: "100%"
+  }
+});
 /** ↑
  * These properties */
 ```
@@ -20,48 +24,62 @@ This rule ignores variables (`$sass`, `@less`, `--custom-property`).
 
 The following patterns are considered violations:
 
-```css
-.foo {
-  word-wrap: break-word;
-}
+```js
+StyleSheet.create({
+  text: {
+    wordWrap: "break-word"
+  }
+});
 ```
 
-```css
-.foo {
-  colr: blue;
-}
+```js
+StyleSheet.create({
+  text: {
+    colr: "blue"
+  }
+});
 ```
 
-```css
-.foo {
-  my-property: 1;
-}
+```js
+StyleSheet.create({
+  text: {
+    myProperty: 1
+  }
+});
 ```
 
-```css
-.foo {
-  box-shadow: 1px 2px 3px red;
-}
+```js
+StyleSheet.create({
+  text: {
+    boxShadow: "1px 2px 3px red"
+  }
+});
 ```
 
 The following patterns are _not_ considered violations:
 
-```css
-.foo {
-  color: green;
-}
+```js
+StyleSheet.create({
+  text: {
+    color: "green"
+  }
+});
 ```
 
-```css
-.foo {
-  align-self: center;
-}
+```js
+StyleSheet.create({
+  text: {
+    alignSelf: "center"
+  }
+});
 ```
 
-```css
-.foo {
-  elevation: 6;
-}
+```js
+StyleSheet.create({
+  text: {
+    elevation: 6
+  }
+});
 ```
 
 ## Optional secondary options
@@ -76,20 +94,26 @@ Given:
 
 The following patterns are _not_ considered violations:
 
-```css
-.foo {
-  my-property: 10px;
-}
+```js
+StyleSheet.create({
+  text: {
+    myProperty: 10
+  }
+});
 ```
 
-```css
-.foo {
-  my-other-property: 10px;
-}
+```js
+StyleSheet.create({
+  text: {
+    myOtherProperty: 10
+  }
+});
 ```
 
-```css
-.foo {
-  custom: 10px;
-}
+```js
+StyleSheet.create({
+  text: {
+    custom: 10
+  }
+});
 ```

@@ -54,7 +54,7 @@ These rules are meant to be used with tools that allow you to write CSS when usi
 
 ### style- rules (for React Native's built-in styling)
 
-These rules are meant to be used when styling with React Native's built-in styling, or with tools that use React Native's default styling.
+These rules are meant to be used when styling with React Native's built-in styling ([StyleSheet](https://facebook.github.io/react-native/docs/stylesheet)), or with tools that use React Native's default styling.
 
 - [`style-property-no-unknown`](./src/rules/style-property-no-unknown/README.md): Disallow unknown React Native Style properties.
 
