@@ -123,6 +123,124 @@ testRule(rule, {
 
 testRule(rule, {
   ruleName,
+  syntax: "css-in-js",
+  skipBasicChecks: true,
+  config: [true],
+
+  accept: [
+    {
+      code: `
+      import styled from "styled-components";
+
+      const Test = styled.Text\`
+        border-color: red;
+        height: 0;
+        min-width: 700px;
+      \`;
+      `,
+      description: "accepts styled-components supported CSS properties"
+    },
+    {
+      code: `
+      import styled from "styled-components";
+
+      const Test = styled.Text\`
+        elevation: 6;
+        shadow-color: black;
+      \`;
+      `,
+      description: "accepts styled-components React Native specific properties"
+    },
+    {
+      code: `
+      import styled from "styled-components";
+
+      const Test = styled.Text\`
+        border: 1px #000 solid;
+        box-shadow: 1px 2px 3px red;
+      \`;
+      `,
+      description:
+        "accepts styled-components css-to-react-native specific properties"
+    }
+  ],
+
+  reject: [
+    {
+      code: `
+      import styled from "styled-components";
+
+      const Test = styled.Text\`
+        colr: blue;
+      \`;
+      `,
+      description: "rejects styled-components property with typo",
+      message: messages.rejected("colr"),
+      line: 5,
+      column: 9
+    },
+    {
+      code: `
+      import styled from "styled-components";
+
+      const Test = styled.Text\`
+        COLR: blue;
+      \`;
+      `,
+      description: "rejects styled-components uppercase property with typo",
+      message: messages.rejected("COLR"),
+      line: 5,
+      column: 9
+    },
+    {
+      code: `
+      import styled from "styled-components";
+
+      const Test = styled.Text\`
+        word-wrap: break-word;
+      \`;
+      `,
+      description: "rejects styled-components unsupported CSS properties",
+      message: messages.rejected("word-wrap"),
+      line: 5,
+      column: 9
+    },
+    {
+      code: `
+      import styled from "styled-components";
+
+      const Test = styled.Text\`
+        -webkit-align-self: stretch;
+      \`;
+      `,
+      description:
+        "rejects styled-components CSS properties with vendor prefix",
+      message: messages.rejected("-webkit-align-self"),
+      line: 5,
+      column: 9
+    },
+    {
+      code: `
+      import styled from "styled-components";
+
+      const Test = styled.Text\`
+        border-color: red;
+        height: 0;
+        min-width: 700px;
+        word-wrap: break-word;
+      \`;
+      `,
+      message: messages.rejected("word-wrap"),
+      line: 8,
+      column: 9,
+      description:
+        "rejects styled-components mix of supported CSS properties and unsupported property"
+    }
+  ]
+});
+
+testRule(rule, {
+  ruleName,
   syntax: "scss",
   config: [true],
 

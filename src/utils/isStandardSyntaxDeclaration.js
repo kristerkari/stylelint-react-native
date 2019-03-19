@@ -5,12 +5,6 @@ export function isStandardSyntaxDeclaration(decl /*: Object*/) /*: boolean*/ {
   const prop = decl.prop;
   const parent = decl.parent;
 
-  // Declarations belong in a declaration block
-
-  if (parent.type === "root") {
-    return false;
-  }
-
   // Sass var (e.g. $var: x), nested list (e.g. $list: (x)) or nested map (e.g. $map: (key:value))
   if (prop[0] === "$") {
     return false;
@@ -27,6 +21,11 @@ export function isStandardSyntaxDeclaration(decl /*: Object*/) /*: boolean*/ {
     parent.selector[parent.selector.length - 1] === ":" &&
     parent.selector.substring(0, 2) !== "--"
   ) {
+    return false;
+  }
+
+  // Less &:extend
+  if (decl.extend) {
     return false;
   }
 
