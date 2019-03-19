@@ -4728,9 +4728,10 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-native-known-styling-properties@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/react-native-known-styling-properties/-/react-native-known-styling-properties-1.0.4.tgz#4fee8b62ff8a5065550dbb34b03b592b7c2fdd1a"
+react-native-known-styling-properties@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-native-known-styling-properties/-/react-native-known-styling-properties-1.0.5.tgz#dd99690d579c5136541e1df836e75088af6e7356"
+  integrity sha512-PKRW5v9Um2/7mIaUy2fxg3XugP/QyVoqnzpnkY6AUTIlfyC2c/PeEhDwEVJgTotWiFCIj2lUACQ2lsG5zp0NUQ==
 
 read-pkg-up@^1.0.1:
   version "1.0.1"

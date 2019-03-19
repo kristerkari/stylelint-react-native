@@ -147,6 +147,7 @@ testRule(rule, {
       const Test = styled.Text\`
         elevation: 6;
         shadow-color: black;
+        aspect-ratio: 1;
       \`;
       `,
       description: "accepts styled-components React Native specific properties"

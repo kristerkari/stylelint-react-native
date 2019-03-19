@@ -146,6 +146,6 @@
     "trailingComma": "none"
   },
   "dependencies": {
-    "react-native-known-styling-properties": "^1.0.4"
+    "react-native-known-styling-properties": "^1.0.5"
   }
 }

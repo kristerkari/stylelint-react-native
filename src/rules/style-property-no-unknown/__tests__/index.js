@@ -121,7 +121,8 @@ testRule(rule, {
       StyleSheet.create({
         foo: {
           elevation: 6,
-          shadowColor: "black"
+          shadowColor: "black",
+          aspectRatio: 3/2
         }
       });
       `,
