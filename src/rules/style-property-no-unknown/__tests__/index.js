@@ -126,6 +126,62 @@ testRule(rule, {
       });
       `,
       description: "accepts React Native specific properties"
+    },
+    {
+      code: `
+      const styles = {
+        text: {
+          color: "blue"
+        }
+      };
+
+      StyleSheet.create({
+        styles
+      });
+      `,
+      description: "ignores object composition (issue #18)"
+    },
+    {
+      code: `
+      const styles = {
+        text: {
+          color: "blue"
+        }
+      };
+
+      StyleSheet.create({
+        styles: styles
+      });
+      `,
+      description: "ignores object composition (issue #18)"
+    },
+    {
+      code: `
+      const yourStyles = {
+        link: {
+          color: "red"
+        }
+      };
+
+      const styles = {
+        btn: {
+          color: "green"
+        }
+      };
+
+      const myStyles = {
+        text: {
+          color: "blue"
+        }
+      };
+
+      StyleSheet.create({
+        ...yourStyles,
+        styles,
+        myStyles
+      });
+      `,
+      description: "ignores object composition (issue #18)"
     }
   ],
 
@@ -179,6 +235,27 @@ testRule(rule, {
       })
       `,
       description: "rejects css-to-react-native specific properties"
+    },
+    {
+      code: `
+      const styles = {
+        btn: {
+          color: "green"
+        }
+      };
+
+      StyleSheet.create({
+        styles,
+        foo: {
+          wordWrap: "break-word"
+        }
+      })
+    `,
+      description:
+        "ignores object composition and rejects unsupported CSS properties",
+      message: messages.rejected("word-wrap"),
+      line: 11,
+      column: 10
     }
   ]
 });
