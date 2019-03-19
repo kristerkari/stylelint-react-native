@@ -1,12 +1,12 @@
-import { utils } from "stylelint";
 import { allProps } from "react-native-known-styling-properties";
+import { utils } from "stylelint";
 import {
+  isCustomProperty,
+  isStandardSyntaxDeclaration,
+  isStandardSyntaxProperty,
+  isString,
   kebabCase,
   namespace,
-  isString,
-  isCustomProperty,
-  isStandardSyntaxProperty,
-  isStandardSyntaxDeclaration,
   optionsMatches
 } from "../../utils";
 
@@ -41,6 +41,11 @@ export default function(actual, options) {
 
     root.walkDecls(decl => {
       const prop = decl.prop;
+      const value = decl.value;
+
+      if (kebabCase(prop) === kebabCase(value)) {
+        return;
+      }
 
       if (!isStandardSyntaxProperty(prop)) {
         return;
