@@ -1,3 +1,7 @@
+## v2.1.0
+
+- Added: support for stylelint version 10.
+
 ## v2.0.2
 
 - Fixed: don't warn for object composition of styles when using `style-property-no-unknown`.
