@@ -1,3 +1,7 @@
+## v2.1.1
+
+- Fixed: `css-property-no-unknown` now ignores custom `-styled-mixin` properties that `stylelint-processor-styled-components` is using.
+
 ## v2.1.0
 
 - Added: support for stylelint version 10.
