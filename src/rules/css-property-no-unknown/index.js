@@ -67,6 +67,10 @@ export default function(actual, options) {
         return;
       }
 
+      if (/^-styled-mixin\d+/.test(prop.toLowerCase())) {
+        return;
+      }
+
       utils.report({
         message: messages.rejected(prop),
         node: decl,

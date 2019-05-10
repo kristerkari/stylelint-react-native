@@ -48,6 +48,10 @@ testRule(rule, {
       }
       `,
       description: "ignore properties inside ICSS :export pseudo-selector"
+    },
+    {
+      code: ".foo { -styled-mixin0: dummyValue; }",
+      description: "ignore styled-component mixins"
     }
   ],
 
