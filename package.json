@@ -137,7 +137,7 @@
     "lint-staged": "^9.1.0",
     "npmpub": "^4.1.0",
     "prettier": "^1.18.2",
-    "rimraf": "^2.6.3",
+    "rimraf": "^2.7.1",
     "stylelint": "^10.1.0"
   },
   "prettier": {
