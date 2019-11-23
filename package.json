@@ -123,7 +123,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
-    "@babel/core": "^7.5.0",
+    "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.5.3",
     "babel-plugin-istanbul": "^5.1.4",
     "babel-preset-jest": "24.6.0",
