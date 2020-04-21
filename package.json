@@ -127,7 +127,7 @@
     "@babel/preset-env": "^7.5.3",
     "babel-plugin-istanbul": "^5.1.4",
     "babel-preset-jest": "24.6.0",
-    "coveralls": "^3.0.4",
+    "coveralls": "^3.0.12",
     "eslint": "^6.0.1",
     "eslint-config-stylelint": "^11.0.0",
     "eslint-plugin-sort-requires": "^2.1.0",
