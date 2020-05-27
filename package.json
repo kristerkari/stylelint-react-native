@@ -124,7 +124,7 @@
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.1",
-    "@babel/preset-env": "^7.5.3",
+    "@babel/preset-env": "^7.10.1",
     "babel-plugin-istanbul": "^5.1.4",
     "babel-preset-jest": "24.6.0",
     "coveralls": "^3.0.4",
