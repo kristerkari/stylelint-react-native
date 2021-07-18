@@ -164,6 +164,7 @@ testRule(rule, {
       const Test = styled.Text\`
         border: 1px #000 solid;
         box-shadow: 1px 2px 3px red;
+        place-content: center;
       \`;
       `,
       description:
