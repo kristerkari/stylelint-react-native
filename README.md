@@ -3,8 +3,7 @@
 A collection of React Native specific linting rules for [stylelint](https://github.com/stylelint/stylelint) (in a form of a plugin).
 
 [![NPM version](https://img.shields.io/npm/v/stylelint-react-native.svg)](https://www.npmjs.com/package/stylelint-react-native)
-[![Build Status](https://travis-ci.org/kristerkari/stylelint-react-native.svg?branch=master)](https://travis-ci.org/kristerkari/stylelint-react-native)
-[![Build status](https://ci.appveyor.com/api/projects/status/6rse3dd910c0wiwl/branch/master?svg=true)](https://ci.appveyor.com/project/kristerkari/stylelint-react-native/branch/master)
+[![Build Status](https://github.com/kristerkari/stylelint-react-native/workflows/Tests/badge.svg)](https://github.com/kristerkari/stylelint-react-native/actions?workflow=Tests)
 [![Downloads per month](https://img.shields.io/npm/dm/stylelint-react-native.svg)](http://npmcharts.com/compare/stylelint-react-native?periodLength=30)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
 [![Greenkeeper badge](https://badges.greenkeeper.io/kristerkari/stylelint-react-native.svg)](https://greenkeeper.io/)
