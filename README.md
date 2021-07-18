@@ -6,7 +6,6 @@ A collection of React Native specific linting rules for [stylelint](https://gith
 [![Build Status](https://github.com/kristerkari/stylelint-react-native/workflows/Tests/badge.svg)](https://github.com/kristerkari/stylelint-react-native/actions?workflow=Tests)
 [![Downloads per month](https://img.shields.io/npm/dm/stylelint-react-native.svg)](http://npmcharts.com/compare/stylelint-react-native?periodLength=30)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
-[![Greenkeeper badge](https://badges.greenkeeper.io/kristerkari/stylelint-react-native.svg)](https://greenkeeper.io/)
 
 ## Installation and usage
 
