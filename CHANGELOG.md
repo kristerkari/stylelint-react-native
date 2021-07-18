@@ -1,3 +1,8 @@
+## v2.3.0
+
+- Added: `css-property-no-unknown` support for `place-content` property.
+- Updated: `react-native-known-styling-properties` dependency to v1.1.0.
+
 ## v2.2.0
 
 - Added: support for stylelint versions 11, 12 and 13.
