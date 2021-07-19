@@ -209,7 +209,7 @@ testRule(rule, {
       })
       `,
       description: "rejects uppercase property with typo",
-      message: messages.rejected("COLR"),
+      message: messages.rejected("-c-o-l-r"),
       line: 4,
       column: 10
     },
