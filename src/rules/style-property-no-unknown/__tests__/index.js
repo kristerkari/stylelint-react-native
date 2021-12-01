@@ -1,6 +1,6 @@
-import rule, { messages, ruleName } from "..";
+import { messages, ruleName } from "..";
 
-testRule(rule, {
+testRule({
   ruleName,
   config: [true],
 
@@ -92,14 +92,26 @@ testRule(rule, {
         box-shadow: 1px 2px 3px red;
       }
       `,
+      warnings: [
+        {
+          message: messages.rejected("border"),
+          line: 3,
+          column: 9
+        },
+        {
+          message: messages.rejected("box-shadow"),
+          line: 4,
+          column: 9
+        }
+      ],
       description: "rejects css-to-react-native specific properties"
     }
   ]
 });
 
-testRule(rule, {
+testRule({
   ruleName,
-  syntax: "css-in-js",
+  customSyntax: "@stylelint/postcss-css-in-js",
   skipBasicChecks: true,
   config: [true],
 
@@ -235,6 +247,18 @@ testRule(rule, {
         }
       })
       `,
+      warnings: [
+        {
+          message: messages.rejected("border"),
+          line: 4,
+          column: 10
+        },
+        {
+          message: messages.rejected("box-shadow"),
+          line: 5,
+          column: 10
+        }
+      ],
       description: "rejects css-to-react-native specific properties"
     },
     {
@@ -261,9 +285,9 @@ testRule(rule, {
   ]
 });
 
-testRule(rule, {
+testRule({
   ruleName,
-  syntax: "scss",
+  customSyntax: "postcss-scss",
   config: [true],
 
   accept: [
@@ -282,9 +306,9 @@ testRule(rule, {
   ]
 });
 
-testRule(rule, {
+testRule({
   ruleName,
-  syntax: "less",
+  customSyntax: "postcss-less",
   config: [true],
 
   accept: [
@@ -307,7 +331,7 @@ testRule(rule, {
   ]
 });
 
-testRule(rule, {
+testRule({
   ruleName,
   config: [
     true,
