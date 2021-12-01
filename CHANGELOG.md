@@ -1,3 +1,7 @@
+## v2.4.0
+
+- Added: support for stylelint version 14.
+
 ## v2.3.0
 
 - Added: `css-property-no-unknown` support for `place-content` property.
