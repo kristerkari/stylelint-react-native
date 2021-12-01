@@ -1,6 +1,6 @@
-import rule, { messages, ruleName } from "..";
+import { messages, ruleName } from "..";
 
-testRule(rule, {
+testRule({
   ruleName,
   config: [true],
 
@@ -126,9 +126,9 @@ testRule(rule, {
   ]
 });
 
-testRule(rule, {
+testRule({
   ruleName,
-  syntax: "css-in-js",
+  customSyntax: "@stylelint/postcss-css-in-js",
   skipBasicChecks: true,
   config: [true],
 
@@ -260,9 +260,9 @@ testRule(rule, {
   ]
 });
 
-testRule(rule, {
+testRule({
   ruleName,
-  syntax: "scss",
+  customSyntax: "postcss-scss",
   config: [true],
 
   accept: [
@@ -281,9 +281,9 @@ testRule(rule, {
   ]
 });
 
-testRule(rule, {
+testRule({
   ruleName,
-  syntax: "less",
+  customSyntax: "postcss-less",
   config: [true],
 
   accept: [
@@ -306,7 +306,7 @@ testRule(rule, {
   ]
 });
 
-testRule(rule, {
+testRule({
   ruleName,
   config: [
     true,
