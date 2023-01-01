@@ -129,7 +129,7 @@
     "babel-plugin-istanbul": "^6.0.0",
     "babel-preset-jest": "^27.0.6",
     "eslint": "^7.31.0",
-    "eslint-config-stylelint": "^13.1.1",
+    "eslint-config-stylelint": "^17.1.0",
     "eslint-plugin-sort-requires": "^2.1.0",
     "husky": "^7.0.1",
     "jest": "^27.0.6",
