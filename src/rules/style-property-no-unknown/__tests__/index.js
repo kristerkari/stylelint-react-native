@@ -195,6 +195,18 @@ testRule({
       });
       `,
       description: "ignores object composition (issue #18)"
+    },
+    {
+      code: `
+      StyleSheet.create({
+        foo: {
+          rowGap: 10,
+          columnGap: 40,
+          gap: 10
+        }
+      });
+      `,
+      description: "accepts gap properties"
     }
   ],
 
