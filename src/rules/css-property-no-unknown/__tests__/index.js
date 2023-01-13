@@ -53,6 +53,16 @@ testRule({
     {
       code: ".foo { -styled-mixin0: dummyValue; }",
       description: "ignore styled-component mixins"
+    },
+    {
+      code: `
+      .foo {
+        row-gap: 10px;
+        column-gap: 40px;
+        gap: 10px;
+      }
+      `,
+      description: "accepts gap properties"
     }
   ],
 
