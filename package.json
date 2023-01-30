@@ -133,7 +133,7 @@
     "eslint-plugin-sort-requires": "^2.1.0",
     "husky": "^7.0.1",
     "jest": "^27.0.6",
-    "jest-cli": "^27.0.6",
+    "jest-cli": "^29.4.1",
     "jest-preset-stylelint": "^5.0.4",
     "lint-staged": "^13.1.0",
     "npmpub": "^5.0.0",
