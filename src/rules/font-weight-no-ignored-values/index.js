@@ -6,13 +6,13 @@ const declarationValueIndex = require("stylelint/lib/utils/declarationValueIndex
 export const ruleName = namespace("font-weight-no-ignored-values");
 
 export const messages = utils.ruleMessages(ruleName, {
-  rejected: weight => `Unexpected font-weight "${weight}"`
+  rejected: (weight) => `Unexpected font-weight "${weight}"`
 });
 
 const acceptedWeights = ["400", "700", "normal", "bold"];
 
-export default function(actual) {
-  return function(root, result) {
+export default function (actual) {
+  return function (root, result) {
     const validOptions = utils.validateOptions(result, ruleName, {
       actual
     });
@@ -21,7 +21,7 @@ export default function(actual) {
       return;
     }
 
-    root.walkDecls(/^font-weight$/i, decl => {
+    root.walkDecls(/^font-weight$/i, (decl) => {
       if (acceptedWeights.indexOf(decl.value) > -1) {
         return;
       }
