@@ -13,13 +13,13 @@ import {
 export const ruleName = namespace("style-property-no-unknown");
 
 export const messages = utils.ruleMessages(ruleName, {
-  rejected: property => `Unexpected unknown property "${property}"`
+  rejected: (property) => `Unexpected unknown property "${property}"`
 });
 
 const props = allProps.map(kebabCase);
 
-export default function(actual, options) {
-  return function(root, result) {
+export default function (actual, options) {
+  return function (root, result) {
     const validOptions = utils.validateOptions(
       result,
       ruleName,
@@ -39,7 +39,7 @@ export default function(actual, options) {
       return;
     }
 
-    root.walkDecls(decl => {
+    root.walkDecls((decl) => {
       const prop = decl.prop;
       const value = decl.value;
 

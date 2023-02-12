@@ -7,7 +7,7 @@ testRule({
   ruleName,
   config: [true],
 
-  accept: acceptedWeights.map(w => {
+  accept: acceptedWeights.map((w) => {
     return {
       code: `
       .foo {
@@ -18,7 +18,7 @@ testRule({
     };
   }),
 
-  reject: rejectedWeights.map(w => {
+  reject: rejectedWeights.map((w) => {
     return {
       code: `
       .foo {
