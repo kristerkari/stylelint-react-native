@@ -1,3 +1,7 @@
+## v2.6.0
+
+- Added: support for stylelint version 15.
+
 ## v2.5.0
 
 - Added: support for `rowGap`, `columnGap`, and `gap` properties.
