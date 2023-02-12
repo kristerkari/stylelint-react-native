@@ -32,7 +32,7 @@
     "prettify": "prettier --write src/**/*",
     "prepublish": "npm run build",
     "pretest": "npm run lint",
-    "release": "npmpub",
+    "release": "np",
     "jest": "jest",
     "test": "jest --coverage"
   },
@@ -136,7 +136,7 @@
     "jest-cli": "^29.4.2",
     "jest-preset-stylelint": "^6.0.0",
     "lint-staged": "^13.1.0",
-    "npmpub": "^5.0.0",
+    "np": "^7.6.3",
     "postcss-less": "^5.0.0",
     "postcss-scss": "^4.0.2",
     "postcss-syntax": "^0.36.2",
