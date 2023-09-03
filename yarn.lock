@@ -2636,18 +2636,18 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-config-prettier@^8.8.0:
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.8.0.tgz#bfda738d412adc917fd7b038857110efe98c9348"
-  integrity sha512-wLbQiFre3tdGgpDv67NQKnJuTlcUVYHas3k+DZCc2U2BadthoEY4B7hLPvAxaqdyOGCzuLfii2fqGph10va7oA==
+eslint-config-prettier@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-9.0.0.tgz#eb25485946dd0c66cd216a46232dc05451518d1f"
+  integrity sha512-IcJsTkJae2S35pRsRAwoCE+925rJJStOdkKnLVgtE+tEpqU0EVVM7OqrwxqgptKdX29NUwC82I5pXsGFIgSevw==
 
-eslint-config-stylelint@^19.0.0:
-  version "19.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-stylelint/-/eslint-config-stylelint-19.0.0.tgz#e7c6aac967cf4d9e22362a85e50afa9f253e0610"
-  integrity sha512-/DeIeRWxh0mYkZHEeZ2Y5KiEn54Uw2Eid7pTh1ixeL5CQgYagGt1UMUsDzcEUo3KyNgG+V2Z/9SD/wL8K36o+w==
+eslint-config-stylelint@^20.0.0:
+  version "20.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-stylelint/-/eslint-config-stylelint-20.0.0.tgz#070acbb2a06054efbbac737278b3b610e3d68860"
+  integrity sha512-slSWq5J/bi31cJaM/yPcWURXDb4rBkrk0EYJ6qfaP9weeZUVFsgUJuYlAMoleJrskmCKHFIooJSe/yWmdrQ7ZA==
   dependencies:
-    eslint-config-prettier "^8.8.0"
-    eslint-plugin-n "^16.0.0"
+    eslint-config-prettier "^9.0.0"
+    eslint-plugin-n "^16.0.1"
     eslint-plugin-regexp "^1.15.0"
 
 eslint-plugin-es-x@^7.1.0:
@@ -2658,7 +2658,7 @@ eslint-plugin-es-x@^7.1.0:
     "@eslint-community/eslint-utils" "^4.1.2"
     "@eslint-community/regexpp" "^4.5.0"
 
-eslint-plugin-n@^16.0.0:
+eslint-plugin-n@^16.0.1:
   version "16.0.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-n/-/eslint-plugin-n-16.0.1.tgz#baa62bb3af52940a53ba15386348ad9b0b425ada"
   integrity sha512-CDmHegJN0OF3L5cz5tATH84RPQm9kG+Yx39wIqIwPR2C0uhBGMWfbbOtetR83PQjjidA5aXMu+LEFw1jaSwvTA==
