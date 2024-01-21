@@ -1,3 +1,8 @@
+## v2.7.0
+
+- Added: support for stylelint version 16 (#187).
+- Added: support for more React Native properties (#193, #194).
+
 ## v2.6.0
 
 - Added: support for stylelint version 15.
