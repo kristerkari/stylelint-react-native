@@ -33,8 +33,8 @@
     "prepublish": "npm run build",
     "pretest": "npm run lint",
     "release": "np",
-    "jest": "jest",
-    "test": "jest --coverage"
+    "jest": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest",
+    "test": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -46,7 +46,7 @@
     "url": "https://github.com/kristerkari/stylelint-react-native/issues"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=18.12.0"
   },
   "homepage": "https://github.com/kristerkari/stylelint-react-native#readme",
   "jest": {
@@ -68,6 +68,7 @@
         "statements": 75
       }
     },
+    "preset": "jest-preset-stylelint",
     "setupFiles": [
       "./jest-setup.js"
     ],
@@ -78,7 +79,7 @@
     "testRegex": ".*\\.test\\.js$|src/.*/__tests__/.*\\.js$"
   },
   "peerDependencies": {
-    "stylelint": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0"
+    "stylelint": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
   },
   "lint-staged": {
     "**/*.{js,json,md}": [
@@ -128,13 +129,14 @@
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "babel-plugin-istanbul": "^6.0.0",
     "babel-preset-jest": "^29.2.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.31.0",
     "eslint-config-stylelint": "^20.0.0",
     "eslint-plugin-sort-requires": "^2.1.0",
     "husky": "^7.0.1",
-    "jest": "^29.4.2",
-    "jest-cli": "^29.4.2",
-    "jest-preset-stylelint": "^6.0.0",
+    "jest": "^29.7.0",
+    "jest-cli": "^29.7.0",
+    "jest-preset-stylelint": "^7.0.0",
     "lint-staged": "^13.1.0",
     "np": "^8.0.4",
     "postcss-less": "^5.0.0",
@@ -142,7 +144,7 @@
     "postcss-syntax": "^0.36.2",
     "prettier": "^3.0.0",
     "rimraf": "^5.0.1",
-    "stylelint": "^15.1.0"
+    "stylelint": "^16.2.0"
   },
   "prettier": {
     "semi": true,

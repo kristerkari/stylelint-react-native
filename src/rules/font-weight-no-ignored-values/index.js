@@ -1,7 +1,7 @@
 import { utils } from "stylelint";
 import { namespace } from "../../utils";
 
-const declarationValueIndex = require("stylelint/lib/utils/declarationValueIndex");
+const declarationValueIndex = require("../../utils/declarationValueIndex");
 
 export const ruleName = namespace("font-weight-no-ignored-values");
 

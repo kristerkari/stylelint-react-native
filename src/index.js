@@ -6,4 +6,4 @@ const rulesPlugins = Object.keys(rules).map(ruleName => {
   return createPlugin(namespace(ruleName), rules[ruleName]);
 });
 
-export default rulesPlugins;
+module.exports = rulesPlugins;
