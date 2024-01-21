@@ -63,6 +63,30 @@ testRule({
       }
       `,
       description: "accepts gap properties"
+    },
+    {
+      code: `
+      .foo {
+        transform-origin: -100% 50%;
+      }
+      `,
+      description: "accepts transform-origin"
+    },
+    {
+      code: `
+      .foo {
+        border-block-color: yellow;
+      }
+      `,
+      description: "accepts border-block-color"
+    },
+    {
+      code: `
+      .foo {
+        user-select: auto;
+      }
+      `,
+      description: "accepts user-select"
     }
   ],
 

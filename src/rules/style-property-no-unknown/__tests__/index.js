@@ -207,6 +207,36 @@ testRule({
       });
       `,
       description: "accepts gap properties"
+    },
+    {
+      code: `
+      StyleSheet.create({
+        foo: {
+          transformOrigin: "-100% 50%"
+        }
+      });
+      `,
+      description: "accepts transform-origin"
+    },
+    {
+      code: `
+      StyleSheet.create({
+        foo: {
+          borderBlockColor: "yellow"
+        }
+      });
+      `,
+      description: "accepts border-block-color"
+    },
+    {
+      code: `
+      StyleSheet.create({
+        foo: {
+          userSelect: "auto"
+        }
+      });
+      `,
+      description: "accepts user-select"
     }
   ],
 
